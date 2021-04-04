@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "home-assignment-1256a": {
+      "hosting": {
+        "home-assignment": [
+          "home-assignment-1256a"
+        ]
+      }
+    }
+  }
+}

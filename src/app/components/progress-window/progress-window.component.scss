@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    border: 2px solid black;
+    &__title{
+        display:flex;
+        background-color: black;
+        color: white;
+        justify-content: space-between;
+        padding: 10px;
+
+        .title__icons{
+            display: flex;
+
+            
+        }
+    }
+
+    &__list{      
+        max-height: 270px;  
+        overflow-y: scroll;
+    }
+}
+.pi-chevron-down{
+     margin-right: 10px;
+     
+}

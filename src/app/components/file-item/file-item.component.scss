@@ -1,0 +1,35 @@
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted black;
+    margin: 5px;
+    padding: 5px;
+    &__details{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        justify-content: space-between;
+        max-width: 370px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .pi-book{
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    .pi-trash{
+        font-size: 20px;
+        margin: 25px 0 0 5px;
+        color: grey;
+    }
+    .pi-check-circle{
+        font-size: 20px;
+        color: greenyellow;
+        margin: 25px 0 0 5px;
+    }
+    p-progressbar-determinate{
+        max-height: 6px;
+    }
+}
