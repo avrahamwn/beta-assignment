@@ -1,0 +1,15 @@
+<div class="container">
+    <i class="pi pi-book"></i>
+    <div class="container__details">
+        <div class="details__title">{{file.file.name || 'uploading...'}}</div>
+        <div class="details__size">{{file.file.size || 0}} bytes</div>
+       
+        <p-progressBar 
+            [showValue]="false" 
+            [value]="file.$percentage | async" 
+            [style]="{height: '8px', width:'370px'}" 
+        ></p-progressBar>
+    </div>
+    <i class="pi pi-trash" *ngIf="(file.$percentage |async) < 100" (click)="onTrashClicked()"></i>
+    <i class="pi pi-check-circle" *ngIf="(file.$percentage |async) >= 100"></i>
+</div>

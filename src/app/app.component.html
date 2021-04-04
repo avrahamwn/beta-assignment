@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="container__title">Click and choose files to upload</div>
+    <input multiple type="file" class="container__upload-btn" (change)="onUploadFiles($event)" />
+    <app-progress-window
+       [files]="filesToUpload"
+    ></app-progress-window>
+</div>
